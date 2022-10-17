@@ -1,0 +1,233 @@
+.card {
+  max-width: 745px;
+  width: 97%;
+  min-width: 290px;
+  padding: 5px;
+  min-height: 200px;
+  box-shadow: 3px 1px 6px 1px rgb(217 217 217);
+  border-radius: 4px;
+  margin: auto;
+  gap: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  display: flex !important;
+  align-items: center;
+}
+
+span svg {
+  margin: 4px 0;
+  color: #98a2b2;
+}
+
+.person {
+  padding: 5px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.personal {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.person p,
+.person h3 {
+  margin: 0;
+}
+
+.person p {
+  color: #4e5b6d;
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.loc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.loc span {
+  display: inline-block;
+  color: #98a2b2;
+  font-size: 12px;
+
+}
+
+.css-1wlk0hk-MuiAvatar-root {
+  width: 96px !important;
+  height: 96px !important;
+  margin-right: 9px;
+}
+
+.reviews {
+  width: 200px;
+  min-height: 100px;
+  text-align: right;
+}
+
+.personal-info {
+  width: 400px;
+}
+
+.rating {
+  display: block;
+  font-size: 22px;
+}
+
+.reviews span:not(:first-child) {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+}
+
+.reviews span {
+  justify-content: flex-end;
+}
+
+.rating svg {
+  color: #ffd91f !important;
+}
+
+span.paid-status {
+  color: green;
+  font-size: 22px !important;
+}
+
+.exp-con {
+  width: 214px;
+  padding: 10px;
+  background: lightgrey;
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.exp-con button {
+  padding: 5px;
+  border: none;
+  background: none;
+  border-radius: 17px;
+  cursor: pointer;
+  width: 69px;
+}
+
+.exp-con button.active {
+  background: white;
+}
+
+
+.expo-des {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.expo-des span {
+  border: 0.5px solid #1f69ff;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+}
+
+.expo-des span:hover {
+  background-color: #b3ccff;
+}
+
+.cl-4 {
+  width: 240px;
+  padding: 5px;
+}
+
+.cl-3 {
+  width: calc(100% - 250px);
+}
+
+.cl-4 span {
+  display: block;
+  font-size: 12px;
+  background: rgb(241 244 249 / 1);
+  padding: 9px;
+}
+
+.cl-4 a {
+  display: block;
+  width: 100%;
+  border: 0.5px solid #1f69ff;
+  transition: 0.2s ease-in-out;
+  border-radius: 18px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.cl-4 a:nth-child(2) {
+  background: #1f69ff;
+  color: white;
+}
+
+.cl-4 a:nth-child(3) {
+  color: #1f69ff;
+}
+
+.cl-4 a:nth-child(3):hover {
+  background-color: #b3ccff;
+}
+
+.cl-2 {
+  align-items: flex-start !important;
+}
+
+@media (max-width:760px) {
+  .personal-info, .cl-3 {
+    width: 100%;
+    padding: 8px 2px;
+    border-bottom: 0.5px solid #98a2b2;
+  }
+
+  .personal-info{
+    order: 3;
+  }
+
+  .reviews {
+    order: 2;
+  }
+
+  .cl-4 {
+    width: 100%;
+  }
+
+  .cl-4>* {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .expo-des{
+    justify-content: center;
+  }
+
+  .exp-con{
+    margin: 12px auto;
+  }
+}
